@@ -5,7 +5,7 @@ public class ControlFlow {
     public static void main(String[] args) {
 
         boolean hungry = true;
-
+        
         if (hungry){
             System.out.println("I am starving ...");
         } else {
@@ -19,5 +19,19 @@ public class ControlFlow {
         } else {
             System.out.println("I am starving");
         }
+
+        int favoriteTemp = 75;
+        int currentTemp = 60;
+        String opinion;
+        
+        if (currentTemp < favoriteTemp - 30){
+            opinion = "It is very cold...";
+        } else if (currentTemp < favoriteTemp - 20){
+            opinion = "It is kinda cold out";
+        }else if (currentTemp > favoriteTemp + 10){
+            opinion = "It's hot!!!";
+        }
+
+        System.out.println(opinion);
     }
 }
