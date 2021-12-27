@@ -25,19 +25,19 @@ public class ControlFlow {
         int currentTemp = 100;
         String opinion;
         
-    if (currentTemp == favoriteTemp){
-        if (currentTemp < favoriteTemp - 30){
-            opinion = "It is very cold...";
-        } else if (currentTemp < favoriteTemp - 20){
+        if (currentTemp == favoriteTemp){
+            if (currentTemp < favoriteTemp - 30){
+                opinion = "It is very cold...";
+            } else if (currentTemp < favoriteTemp - 20){
             opinion = "It is kinda cold out";
-        }else if (currentTemp > favoriteTemp + 10){
+            }else if (currentTemp > favoriteTemp + 10){
             opinion = "It's hot!!!";
-        } else {
+            } else {
             opinion = "It is a beauty!";
+            }
+        }else {
+            opinion = "Invalid temp";
         }
-    }else {
-        opinion = "Invalid temp";
-    }
         System.out.println(opinion);
 
         int month = 4;
