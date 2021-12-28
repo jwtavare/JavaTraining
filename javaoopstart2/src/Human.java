@@ -15,7 +15,7 @@ public class Human {
     }
     
     public void speak(){
-        System.out.println("Hello my name is " + name + System.lineSeparator());
+        System.out.println("Hello my name is " + name);
         System.out.println("My height in inches is " + heightInInches);
         System.out.println("My age is " + age);
         System.out.println("My eyes are " + eyeColor + System.lineSeparator());
