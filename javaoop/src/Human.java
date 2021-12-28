@@ -7,9 +7,9 @@ public class Human {
     int heightInInches;
     String eyeColor;
 
-    public Human(){
- 
-    }
+
+
+   
 
     public void speak(){
         System.out.println("Hello my name is " + name + System.lineSeparator());
