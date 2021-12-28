@@ -1,4 +1,5 @@
 package JavaBasicsMain;
+
 public class MyUtils{
     
     public static String printSomeStuff(String arg){
