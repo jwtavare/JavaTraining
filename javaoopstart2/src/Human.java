@@ -12,6 +12,7 @@ public class Human {
         this.age = age;
         this.heightInInches = heightInInches;
         this.eyeColor = eyeColor;
+        //this keyword refers to the current object in a method or constructor reference
     }
     
     public void speak(){
