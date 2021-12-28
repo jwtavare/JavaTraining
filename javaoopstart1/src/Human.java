@@ -1,3 +1,5 @@
+import java.security.PublicKey;
+
 public class Human {
 
     String name;
@@ -18,7 +20,7 @@ public class Human {
         System.out.println("My age is " + age);
         System.out.println("My eyes are " + eyeColor + System.lineSeparator());
     }
-
+    
     public void eat(){
         System.out.println("eating....");
     }
