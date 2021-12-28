@@ -2,8 +2,7 @@ public class Earth {
     
     public static void main(String [] args) {
          
-        Human tom;
-        tom = new Human();
+        Human tom = new Human();
         //tom is a variable of type Human
         //new keyword used to call constructor method to create new object
 
@@ -15,5 +14,12 @@ public class Earth {
         tom.speak();
         //invoking speak method on the object tom
 
+        Human joe = new Human();
+        joe.age = 50;
+        joe.heightInInches = 70;
+        joe.eyeColor = "Blue";
+        joe.name = "Joseph Brown";
+
+        joe.speak();
     }
 }
