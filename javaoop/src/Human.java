@@ -1,9 +1,15 @@
+import java.security.PublicKey;
+
 public class Human {
 
     String name;
     int age;
     int heightInInches;
     String eyeColor;
+
+    public Human(){
+ 
+    }
 
     public void speak(){
         System.out.println("Hello my name is " + name);
