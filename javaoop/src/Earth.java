@@ -12,7 +12,7 @@ public class Earth {
         tom.name = "Tom Brown";
 
         tom.speak();
-        //invoking speak method on the object tom
+        //invoking speak method on the Human object tom
 
         Human joe = new Human();
         joe.age = 50;
@@ -21,5 +21,9 @@ public class Earth {
         joe.name = "Joseph Brown";
 
         joe.speak();
+
+        //used Human class's constructor to creat two Human objects
+        //in reality tom and joe variables not just objects
+        //object is created when the application runs
     }
 }
