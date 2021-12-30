@@ -19,4 +19,12 @@ public class Animal {
     public void walk(){
         System.out.println("walking...");
     }
+
+    public void swim() {
+        System.out.println("Swimming...");    
+    }
+
+    public void fly() {
+        System.out.println("Flying...");    
+    }
 }
