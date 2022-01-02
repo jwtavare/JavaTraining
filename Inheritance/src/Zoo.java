@@ -19,6 +19,6 @@ public class Zoo {
         //animal3.eat();
         bird1.walk();
         fish1.swim();
-        //chicken1.fly();
+        chicken1.fly();
     }
 }

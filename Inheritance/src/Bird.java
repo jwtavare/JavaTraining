@@ -5,6 +5,10 @@ public class Bird extends Animal {
     }
 
     public void move() {
-        System.out.println("Bird flapping wings...");
+        System.out.println("Flapping wings...");
+    }
+
+    public void fly() {
+        System.out.println("Flying...");
     }
 }

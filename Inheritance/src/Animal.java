@@ -1,4 +1,4 @@
-public abstract class Animal {
+public class Animal {
 
     String type;
     int age;
@@ -13,16 +13,14 @@ public abstract class Animal {
     }
     
     public void eat(){
-        System.out.println("eating....");
+        System.out.println("Eating....");
     }
 
     public void walk(){
-        System.out.println("walking...");
+        System.out.println("Walking...");
     }
 
     public void swim() {
         System.out.println("Swimming...");    
     }
-
-    public abstract void move();
 }
