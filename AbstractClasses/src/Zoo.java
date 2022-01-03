@@ -9,5 +9,12 @@ public class Zoo {
         sparrow2.swim();
         Animal fish1 = new Fish("Perch", 2, 5, 3);
         fish1.move();
+
+        moveAnimals(chicken1);
+        moveAnimals(sparrow2);
+    }
+
+    public static void moveAnimals(Animal animal) {
+        animal.move();
     }
 }
