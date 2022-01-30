@@ -1,8 +1,9 @@
 public class StringsPractice {
     public static void main(String[] args) {
         
-        String a = "hello     ";
+        String str = "ABCDEF";
+        String extractedString = str.substring (0);
 
-        System.out.println(a.length());
+        System.out.println(extractedString);
     }
 }
