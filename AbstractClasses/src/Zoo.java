@@ -11,7 +11,9 @@ public class Zoo {
         fish1.move();
 
         moveAnimals(chicken1);
+        //Passing in chicken1 which is an instance variable to moveAnimal method below
         moveAnimals(sparrow2);
+        //Passing in sparrow2 which is an instance variable to moveAnimal   
     }
 
     public static void moveAnimals(Animal animal) {
