@@ -8,16 +8,8 @@ public class LoopsPractice {
         int count = 0;
 
         printCategories(str);
-
-        while(count<=100){
-            System.out.println("JT:" + count);
-            count = count+1;
-
-            if (count == 30){
-                break;
-            }
-        }
     }
+
     //** extract all categories from the string arg
     public static void printCategories(String string) {
         int i = 0;
@@ -25,7 +17,7 @@ public class LoopsPractice {
             int found = string.indexOf("category:", i);
             //variable returning first index locator whenever "category" is detected
             
-            if (i == -1) break;
+            if (found == -1) break;
             int start = found + 9; 
             //accommodates starting position 9 chars from start 
             //of categories word plus colon
