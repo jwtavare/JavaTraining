@@ -6,8 +6,14 @@ public class ForLoopsPractice {
         
         String name = "JasonTavares 143 Prospect Street";
 
-        for (int i=0; i<100; i++){
+        for (int i=name.length()-1; i>=0; i--){
             System.out.println("char: " + name.charAt(i));
         }
+
+        for (int i=0; i<=100; i=i+2){
+            System.out.println("int: " + i);
+        }
+        
     }
 }
+ 
