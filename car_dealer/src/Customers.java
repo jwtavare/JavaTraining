@@ -9,5 +9,4 @@ public class Customers {
         this.age = age;
         this.address = address;
     }
-
 }
