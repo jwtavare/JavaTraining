@@ -2,9 +2,14 @@ import java.util.Scanner;
 
 public class Employees {
     
-    public void employeeInfo(Scanner name, Scanner age, Scanner position) {
-        this.name = name;
-        this.age = age;
-        this.position = position;
+    String carType;
+    String carYear;
+    String carColor;
+
+    public void employeeInfo(String carType, String CarYear, String carColor) {
+        this.carType = carType;
+        this.carYear = carYear;
+        this.carColor = carColor;
+        
     }
 }
