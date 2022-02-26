@@ -1,12 +1,13 @@
 import java.io.*;
 import java.util.*;
-import javax.tools.FileObject;
 
 public class JavaIO {
     public static void main(String[] args) throws Exception {
 
+        String directoryName = "/users/tavares/Documents/Countries.rtf";
         String fileName = "/users/tavares/Documents/";
         File file = new File(fileName);
+        File directory = new File(directoryName);
         System.out.println("File/Directory name: " + file.getName());
         System.out.println("Parent name: " + file.getParent());
         System.out.println("Can read?: " + file.canRead());
@@ -24,15 +25,30 @@ public class JavaIO {
         System.out.println("Is Directory?: " + file.isDirectory());
         System.out.println(("Last modified?: " + new Date (file.lastModified())));
         
-        File fileList[] = file.listFiles();
-        for (int i = 0; i < fileList.length; i++){
-            File fileObj = fileList[i];
-            if (fileObj.isFile()){
-                System.out.println("Files: " + fileObj.getCanonicalPath());
+        File directoryList[] = directory.listFiles();
+        for (int i = 0; i < directoryList.length; i++){
+            File directoryObj = directoryList[i];
+            if (directoryObj.isFile()){
+                System.out.println("Files: " + directoryObj.getCanonicalPath());
             }
-            if (fileObj.isDirectory()) {
-                System.out.println("Directories: " + fileObj.getCanonicalPath());
+            if (directoryObj.isDirectory()) {
+                System.out.println("Directories: " + directoryObj.getCanonicalPath());
             }
+        }
+        try {
+            RandomAccessFile raf = new RandomAccessFile(directoryName , "rw");
+            
+            char c = 'A';
+            String str = "String with a binary in it";
+            int i = 5;
+            double d =3.5;
+            raf.writeChar(c);
+            raf.writeUTF(str);
+            raf.writeInt(i);
+
+        } catch (Exception e) {
+            //TODO: handle exception
+            e.printStackTrace();
         }
     }    
 }
