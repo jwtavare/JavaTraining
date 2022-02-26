@@ -5,7 +5,7 @@ import javax.tools.FileObject;
 public class JavaIO {
     public static void main(String[] args) throws Exception {
 
-        String fileName = "/users/tavares/Documents/Countries.rtf";
+        String fileName = "/users/tavares/Documents/";
         File file = new File(fileName);
         System.out.println("File/Directory name: " + file.getName());
         System.out.println("Parent name: " + file.getParent());
@@ -22,7 +22,7 @@ public class JavaIO {
         
         System.out.println("Is File?: " + file.isFile());
         System.out.println("Is Directory?: " + file.isDirectory());
-        System.out.println(("Last modified?: " + file.lastModified()));
+        System.out.println(("Last modified?: " + new Date (file.lastModified())));
         
         File fileList[] = file.listFiles();
         for (int i = 0; i < fileList.length; i++){
