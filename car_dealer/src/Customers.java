@@ -1,9 +1,9 @@
 public class Customers {
     
-    private String name;
-    private int age;
-    private String address;
-    private double cashOnHand;
+    static String name;
+    static int age;
+    static String address;
+    static double cashOnHand;
 
     public Customers(String name, int age, String address, double cashOnHand) {
         this.name = name;
@@ -13,6 +13,14 @@ public class Customers {
     }
 
     public void purchaseCar(Vehicles vehicle, Employees employee, boolean finance) {
-        
+        System.out.println("Hello, " + employee.empName + " I would like to buy a " + vehicle.carType);
+        if (finance == true){
+            System.out.println("I would like to finance the car please");
+            double loanAmount = vehicle.carPrice - Customers.cashOnHand;
+            System.out.println("I will be looking to finance " + loanAmount);
+        } else {
+            System.out.println("I do not need financing");
+        }
+
     }
 }
