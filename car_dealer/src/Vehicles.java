@@ -1,11 +1,14 @@
-import java.util.Scanner;
-
 public class Vehicles {
 
-    public static Vehicles newVehicle (final Scanner scanner){
-        String carType = scanner.nextLine();
-        String carYear = scanner.nextLine();
-        String carColor = scanner.nextLine();
-        return new Vehicles();
-   } 
+    private String carType;
+    private String carYear;
+    private String carColor;
+    private double carPrice;
+
+    public Vehicles(String carType, String CarYear, String carColor, double carPrice) {
+        this.carType = carType;
+        this.carYear = carYear;
+        this.carColor = carColor;
+        this.carPrice = carPrice;
+    }
 }
