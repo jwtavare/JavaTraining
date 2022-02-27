@@ -1,9 +1,9 @@
 public class Vehicles {
 
-    private String carType;
-    private String carYear;
-    private String carColor;
-    private double carPrice;
+    String carType;
+    int carYear;
+    String carColor;
+    double carPrice;
 
     public Vehicles(String carType, String CarYear, String carColor, double carPrice) {
         this.carType = carType;
